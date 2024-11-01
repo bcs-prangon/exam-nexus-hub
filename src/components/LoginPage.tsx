@@ -25,7 +25,7 @@ const LoginPage = () => {
     } else {
       toast({
         title: "Login failed",
-        description: "Invalid credentials. Try using id: 'demo' and password: 'password'",
+        description: "Invalid ID or password. Please check your credentials and try again.",
         variant: "destructive",
       });
     }
@@ -37,7 +37,7 @@ const LoginPage = () => {
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
-          <CardDescription className="text-center">Please log in to continue</CardDescription>
+          <CardDescription className="text-center">Please log in with your ID and password</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-4">
@@ -50,6 +50,7 @@ const LoginPage = () => {
                 type="text"
                 value={id}
                 onChange={(e) => setId(e.target.value)}
+                placeholder="Enter your ID (e.g., A47001)"
                 required
               />
             </div>
@@ -62,6 +63,7 @@ const LoginPage = () => {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
+                placeholder="Enter your password"
                 required
               />
             </div>
