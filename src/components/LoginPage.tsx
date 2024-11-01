@@ -4,7 +4,7 @@ import { login } from "@/lib/auth";
 import { useToast } from "@/components/ui/use-toast";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 const LoginPage = () => {
   const [id, setId] = useState("");
@@ -19,23 +19,25 @@ const LoginPage = () => {
       localStorage.setItem("user", JSON.stringify(user));
       toast({
         title: "Login successful",
-        description: "Welcome back!",
+        description: `Welcome back, ${user.name}!`,
       });
       navigate("/current-exams");
     } else {
       toast({
         title: "Login failed",
-        description: "Invalid credentials",
+        description: "Invalid credentials. Try using id: 'demo' and password: 'password'",
         variant: "destructive",
       });
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-background to-background/80">
+      <h1 className="text-4xl font-bold text-primary mb-8">BCS Prangon</h1>
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
+          <CardDescription className="text-center">Please log in to continue</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-4">

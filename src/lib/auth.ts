@@ -4,7 +4,7 @@ export interface User {
 }
 
 export const login = async (id: string, password: string): Promise<User | null> => {
-  // This is a mock implementation. Replace with actual authentication logic.
+  // This is a mock implementation with the provided credentials
   if (id === "demo" && password === "password") {
     return { id: "1", name: "Demo User" };
   }
