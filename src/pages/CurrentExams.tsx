@@ -5,6 +5,7 @@ const CURRENT_EXAMS = [
   {
     name: "Mathematics Final",
     examDate: "2024-03-15",
+    endTime: "14:30",
     lastDate: "2024-03-20",
     examLink: "https://drive.google.com/example1",
     materialsLink: "https://drive.google.com/materials1",
