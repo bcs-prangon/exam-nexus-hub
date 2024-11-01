@@ -19,13 +19,21 @@ const CURRENT_EXAMS = [
 
 const CurrentExams = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-background to-background/80">
       <Navigation />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <h1 className="text-3xl font-bold mb-8">Current Exams</h1>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {CURRENT_EXAMS.map((exam) => (
-            <ExamCard key={exam.name} {...exam} />
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 page-transition">
+        <h1 className="text-4xl font-bold mb-8 text-gray-800 text-center">
+          Current Exams
+        </h1>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {CURRENT_EXAMS.map((exam, index) => (
+            <div
+              key={exam.name}
+              style={{ animationDelay: `${index * 100}ms` }}
+              className="card-hover"
+            >
+              <ExamCard {...exam} />
+            </div>
           ))}
         </div>
       </main>
