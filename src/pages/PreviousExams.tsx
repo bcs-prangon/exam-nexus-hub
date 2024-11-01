@@ -14,75 +14,13 @@ import {
 
 const PREVIOUS_EXAMS = [
   {
-    name: "Chemistry Final 2023",
-    examDate: "2023-12-15",
-    examLink: "https://drive.google.com/example3",
-    materialsLink: "https://drive.google.com/materials3",
-    solutionLink: "https://drive.google.com/solution1",
+    name: "Monthly Exam October",
+    examDate: "2024-10-24",
+    examLink: "https://script.google.com/macros/s/AKfycbyioAk5ogc13AKDX1SKv8CDZs5lSqkPpsAy74gf3WHHUuLW5Ew_z_qAQNK4EOxRm2KolA/exec",
+    materialsLink: "https://drive.google.com/drive/folders/1mzZxSlkqSMb9dMhS3SPj1gufk8xlMLSH",
+    solutionLink: "https://drive.google.com/file/d/11Ai9q5ap9ZvvFlvgYzDzeqgNVhXHan7k",
   },
-  {
-    name: "Biology Midterm 2023",
-    examDate: "2023-10-20",
-    examLink: "https://drive.google.com/example4",
-    materialsLink: "https://drive.google.com/materials4",
-    solutionLink: "https://drive.google.com/solution2",
-  },
-  {
-    name: "Physics Final 2023",
-    examDate: "2023-11-01",
-    examLink: "https://drive.google.com/example5",
-    materialsLink: "https://drive.google.com/materials5",
-    solutionLink: "https://drive.google.com/solution3",
-  },
-  {
-    name: "Mathematics Midterm 2023",
-    examDate: "2023-09-30",
-    examLink: "https://drive.google.com/example6",
-    materialsLink: "https://drive.google.com/materials6",
-    solutionLink: "https://drive.google.com/solution4",
-  },
-  {
-    name: "History Final 2023",
-    examDate: "2023-12-20",
-    examLink: "https://drive.google.com/example7",
-    materialsLink: "https://drive.google.com/materials7",
-    solutionLink: "https://drive.google.com/solution5",
-  },
-  {
-    name: "Geography Midterm 2023",
-    examDate: "2023-10-15",
-    examLink: "https://drive.google.com/example8",
-    materialsLink: "https://drive.google.com/materials8",
-    solutionLink: "https://drive.google.com/solution6",
-  },
-  {
-    name: "Biochemistry Final 2023",
-    examDate: "2023-12-10",
-    examLink: "https://drive.google.com/example9",
-    materialsLink: "https://drive.google.com/materials9",
-    solutionLink: "https://drive.google.com/solution7",
-  },
-  {
-    name: "Literature Midterm 2023",
-    examDate: "2023-11-25",
-    examLink: "https://drive.google.com/example10",
-    materialsLink: "https://drive.google.com/materials10",
-    solutionLink: "https://drive.google.com/solution8",
-  },
-  {
-    name: "Economics Final 2023",
-    examDate: "2023-12-05",
-    examLink: "https://drive.google.com/example11",
-    materialsLink: "https://drive.google.com/materials11",
-    solutionLink: "https://drive.google.com/solution9",
-  },
-  {
-    name: "Statistics Midterm 2023",
-    examDate: "2023-11-15",
-    examLink: "https://drive.google.com/example12",
-    materialsLink: "https://drive.google.com/materials12",
-    solutionLink: "https://drive.google.com/solution10",
-  },
+
 ];
 
 const ITEMS_PER_PAGE = 10;
