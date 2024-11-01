@@ -3,19 +3,12 @@ import ExamCard from "@/components/ExamCard";
 
 const CURRENT_EXAMS = [
   {
-    name: "Mathematics Final",
-    examDate: "2024-03-15",
-    endTime: "14:30",
-    lastDate: "2024-03-20",
-    examLink: "https://drive.google.com/example1",
-    materialsLink: "https://drive.google.com/materials1",
+    name: "Week 13 - গণিত প্র্যাক্টিস পরীক্ষা",
+    examDate: "2024-11-01",
+    examLink: "https://script.google.com/macros/s/AKfycbz_pEXEAGr9OEruYUhZQdjnOUYJInuZB7NDS9rXS2IG_v6e8clF2kps0NGMolLGqUL_WA/exec",
+    materialsLink: "https://drive.google.com/file/d/1fiHN35d6Q3nyt8GtQWnLHjP1-gumkwRq/view?usp=drive_link",
   },
-  {
-    name: "Physics Midterm",
-    examDate: "2024-03-18",
-    examLink: "https://drive.google.com/example2",
-    materialsLink: "https://drive.google.com/materials2",
-  },
+
 ];
 
 const CurrentExams = () => {
