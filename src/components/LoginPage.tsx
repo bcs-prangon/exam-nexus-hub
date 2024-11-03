@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { login } from "@/lib/auth";
 import { useToast } from "@/components/ui/use-toast";
 import { Input } from "@/components/ui/input";
@@ -10,7 +10,11 @@ const LoginPage = () => {
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
   const { toast } = useToast();
+
+  // Get the redirect path from location state, or default to /current-exams
+  const from = (location.state as any)?.from?.pathname || "/current-exams";
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -21,7 +25,8 @@ const LoginPage = () => {
         title: "Login successful",
         description: `Welcome back, ${user.name}!`,
       });
-      navigate("/current-exams");
+      // Redirect to the originally requested URL or default to current-exams
+      navigate(from, { replace: true });
     } else {
       toast({
         title: "Login failed",
